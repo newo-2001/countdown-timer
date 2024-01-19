@@ -1,0 +1,17 @@
+#pragma once
+#include <TM1637Display.h>
+
+constexpr uint8_t PIN_CLOCK = 5;
+constexpr uint8_t PIN_DATA = 4;
+
+#define TIME_SERVER "time.nist.gov"
+#define WIFI_SSID = "NetworkName"
+#define WIFI_PASSWORD = "Correct Horse Battery Staple"
+
+constexpr uint32_t EVENT_TIME = 1706893200UL;
+constexpr byte FINISH_MESSAGE[4] = {
+    SEG_E | SEG_F | SEG_A | SEG_B | SEG_G,
+    SEG_A | SEG_B | SEG_G | SEG_C | SEG_D,
+    SEG_E | SEG_F | SEG_A,
+    0
+};
