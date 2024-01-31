@@ -12,7 +12,7 @@ Copy `TimerConfig.example` to `TimerConfig.h` and enter the required information
 - The segment configuration to display when the countdown has finished.
 - The GPIO pins for the clock and data signals of the diplay.
 
-# Hardware
+## Hardware
 - GPIO16 has to be connected to RESET to wake the chip from deep sleep.
 - CLK and DATA should be connected to the clock and data signal on the display respectively.
 - The display needs to be connected to 5/3.3v and GND.
